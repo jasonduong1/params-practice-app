@@ -1,0 +1,13 @@
+### HOME REQUEST
+GET http://localhost:3000/home
+Content-Type: application/json
+
+### BYE REQUEST
+GET http://localhost:3000/home
+Content-Type: application/json
+
+{
+  "id": "bye"
+}
+
+### SECRET REQUEST
