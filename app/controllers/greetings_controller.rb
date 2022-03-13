@@ -16,4 +16,14 @@ class GreetingsController < ApplicationController
     output = "Hello #{name.capitalize} from #{location.capitalize}."
     render json: "#{output}"
   end
+
+  def secret
+    user = params[:user]
+    pw = params[:pw]
+    if user == "jason" && pw == "thereisnone"
+      render json: { message: "Welcome secret agent!" }
+    else
+      render json: { message: "What are you doing here?" }
+    end
+  end
 end

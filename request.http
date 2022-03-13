@@ -11,3 +11,10 @@ Content-Type: application/json
 }
 
 ### SECRET REQUEST
+POST http://localhost:3000/secret_path
+Content-Type: application/json
+
+{
+  "user": "jason",
+  "pw": "thereisnone"
+}

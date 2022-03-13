@@ -3,4 +3,5 @@ Rails.application.routes.draw do
   get "/home/:id" => "greetings#hello_bye"
   get "/you" => "greetings#you"
   get "/you/:name/:location" => "greetings#you"
+  post "/secret_path" => "greetings#secret"
 end
