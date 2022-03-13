@@ -1,8 +1,4 @@
 class GreetingsController < ApplicationController
-  def home
-    render json: { message: "home page" }
-  end
-
   def hello_bye
     input = params[:id]
     if input == "hello"
@@ -10,7 +6,7 @@ class GreetingsController < ApplicationController
     elsif input == "bye"
       render json: { message: "GOODBYE!" }
     else
-      render json: { message: "123" }
+      render json: { message: "Welcome to the home page!" }
     end
   end
 end
