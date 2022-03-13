@@ -9,4 +9,11 @@ class GreetingsController < ApplicationController
       render json: { message: "Welcome to the home page!" }
     end
   end
+
+  def you
+    location = params[:location] || "unknown"
+    name = params[:name] || "you"
+    output = "Hello #{name.capitalize} from #{location.capitalize}."
+    render json: "#{output}"
+  end
 end
